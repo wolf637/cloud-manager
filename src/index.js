@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './NavBar';
-import VMList from './VMList';
-import Jumbo from './Jumbo';
+import NavBar from './components/NavBar';
+import VMList from './components/VMList';
+import Jumbo from './components/Jumbo';
+import EnvList from './components/env_list';
 
 class VMManager extends React.Component {
 
@@ -13,7 +14,7 @@ class VMManager extends React.Component {
       <div>
         <NavBar />
         <Jumbo />
-        <VMList />
+        <EnvList />
       </div>
       )
   }
